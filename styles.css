@@ -69,7 +69,6 @@ main {
 .faq-div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-300);
     padding: var(--spacing-300) 0;
     border-bottom: 1px solid var(--purple-100);
 }
@@ -111,6 +110,18 @@ main {
     color: var(--purple-600);
     font-size: 14px;
     line-height: 150%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: max-height 0.5s ease, opacity 0.3s ease, margin-top 0.5s ease;
+}
+
+.answer-text.open {
+    max-height: 400px;
+    opacity: 1;
+    margin-top: var(--spacing-300);
+    pointer-events: auto;
 }
 
 /* Tablet Responsive Styles */
