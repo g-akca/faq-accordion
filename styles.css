@@ -112,3 +112,48 @@ main {
     font-size: 14px;
     line-height: 150%;
 }
+
+/* Tablet Responsive Styles */
+@media screen and (min-width: 376px) {
+    /* General */
+    body {
+        background: url(images/background-pattern-desktop.svg) no-repeat top;
+    }
+
+    /* Main Section */
+    main {
+        max-width: 600px;
+        box-sizing: border-box;
+        padding: var(--spacing-500);
+        gap: var(--spacing-400);
+    }
+
+    /* Heading Div */
+    #heading-div img {
+        height: 40px;
+    }
+
+    #heading-div h1 {
+        font-size: 56px;
+        line-height: 66px;
+    }
+
+    /* Accordion Div */
+    .question-btn {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 600;
+    }
+
+    .answer-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* Desktop Responsive Styles */
+@media (min-width: 1440px) {
+    body {
+        background-size: 100% auto;
+    }
+}
