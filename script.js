@@ -9,11 +9,15 @@ questionBtns.forEach(btn => btn.addEventListener("click", () => {
 
     answerTexts.forEach(ans => ans.classList.remove("open"));
     questionBtns.forEach(bt => bt.setAttribute("aria-expanded", "false"));
-    icons.forEach(icon => icon.src = "images/icon-plus.svg");
+    icons.forEach(icon => {
+        icon.src = "images/icon-plus.svg";
+        icon.alt = "Plus icon";
+    });
 
     if (!isExpanded) {
         targetAnswer.classList.add("open");
         btn.setAttribute("aria-expanded", "true");
         btnIcon.src = "images/icon-minus.svg";
+        btnIcon.alt = "Minus icon";
     }
 }));
