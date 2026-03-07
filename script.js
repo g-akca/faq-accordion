@@ -4,15 +4,16 @@ const icons = document.querySelectorAll(".question-btn img");
 
 questionBtns.forEach(btn => btn.addEventListener("click", () => {
     const targetAnswer = document.getElementById(btn.getAttribute("aria-controls"));
+    const btnIcon = btn.querySelector("img");
+    const isExpanded = btn.getAttribute("aria-expanded");
 
-    if (targetAnswer.hidden) {
-        answerTexts.forEach(ans => ans.hidden = true);
-        icons.forEach(icon => icon.src = "images/icon-plus.svg");
+    answerTexts.forEach(ans => ans.hidden = true);
+    questionBtns.forEach(bt => bt.setAttribute("aria-expanded", "false"));
+    icons.forEach(icon => icon.src = "images/icon-plus.svg");
+
+    if (isExpanded == "false") {
         targetAnswer.hidden = false;
-        btn.querySelector("img").src = "images/icon-minus.svg";
-    }
-    else {
-        targetAnswer.hidden = true;
-        btn.querySelector("img").src = "images/icon-plus.svg";
+        btn.setAttribute("aria-expanded", "true");
+        btnIcon.src = "images/icon-minus.svg";
     }
 }));
