@@ -12,6 +12,7 @@
     --spacing-300: 24px;
     --spacing-400: 32px;
     --spacing-500: 40px;
+    --spacing-600: 48px;
 }
 
 /* General */
@@ -29,6 +30,10 @@ body {
     align-items: center;
 }
 
+h1, p {
+    margin: 0;
+}
+
 /* Main Section */
 main {
     padding: var(--spacing-300);
@@ -38,4 +43,45 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-300);
+}
+
+/* Heading Div */
+#heading-div {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+#heading-div img {
+    height: 24px;
+}
+
+#heading-div h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Accordion Div */
+#accordion-div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-600);
+}
+
+.faq-div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
+.question-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-300);
+    text-align: left;
+}
+
+.question-btn img {
+    height: 30px;
 }
