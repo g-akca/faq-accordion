@@ -1,0 +1,24 @@
+/* Root */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --purple-100: #F8EEFF;
+    --purple-600: #8B6990;
+    --purple-950: #301534;
+    --violet-600: #AD28EB;
+
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+}
+
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    background: url(images/background-pattern-mobile.svg) no-repeat top;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+}
