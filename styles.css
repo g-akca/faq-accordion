@@ -129,6 +129,7 @@ main {
     /* General */
     body {
         background: url(images/background-pattern-desktop.svg) no-repeat top;
+        background-color: var(--purple-100);
     }
 
     /* Main Section */
