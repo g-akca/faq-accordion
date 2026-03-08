@@ -102,6 +102,11 @@ main {
     color: var(--violet-600);
 }
 
+.question-btn:focus-visible {
+    outline: 3px solid var(--violet-600);
+    outline-offset: 3px;
+}
+
 .question-btn img {
     height: 30px;
 }
